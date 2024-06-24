@@ -217,6 +217,7 @@ namespace Services
 
         private string ExtractImageUrl(XElement parent, List<string> imageTags)
         {
+            //Regex for UrlToImage
             //var checkRegex = new Regex(imageTags[1]);
             //var check = IsValidRegex(imageTags[1]);
             if (imageTags[1] != "")
