@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Docs\\VisualStudio\\Visual Studio 2022\\source\\repos\\dnisko\\NewsAggregatorRSSFeed\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C31C2A46-7075-495B-9F63-A514E042E17E}|Services\\Services.csproj|d:\\docs\\visualstudio\\visual studio 2022\\source\\repos\\dnisko\\newsaggregatorrssfeed\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C31C2A46-7075-495B-9F63-A514E042E17E}|Services\\Services.csproj|solutionrelative:services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8FF37F7-E8D2-4217-AE52-E289B66C1436}|NewsAggregatorRSSFeed\\NewsAggregatorRSSFeed.csproj|d:\\docs\\visualstudio\\visual studio 2022\\source\\repos\\dnisko\\newsaggregatorrssfeed\\newsaggregatorrssfeed\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8FF37F7-E8D2-4217-AE52-E289B66C1436}|NewsAggregatorRSSFeed\\NewsAggregatorRSSFeed.csproj|solutionrelative:newsaggregatorrssfeed\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8FF37F7-E8D2-4217-AE52-E289B66C1436}|NewsAggregatorRSSFeed\\NewsAggregatorRSSFeed.csproj|d:\\docs\\visualstudio\\visual studio 2022\\source\\repos\\dnisko\\newsaggregatorrssfeed\\newsaggregatorrssfeed\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A8FF37F7-E8D2-4217-AE52-E289B66C1436}|NewsAggregatorRSSFeed\\NewsAggregatorRSSFeed.csproj|solutionrelative:newsaggregatorrssfeed\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{627B3C77-7143-45CD-B5ED-13167ADA44FD}|DomainModels\\DomainModels.csproj|d:\\docs\\visualstudio\\visual studio 2022\\source\\repos\\dnisko\\newsaggregatorrssfeed\\domainmodels\\urlconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{627B3C77-7143-45CD-B5ED-13167ADA44FD}|DomainModels\\DomainModels.csproj|solutionrelative:domainmodels\\urlconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8FF37F7-E8D2-4217-AE52-E289B66C1436}|NewsAggregatorRSSFeed\\NewsAggregatorRSSFeed.csproj|d:\\docs\\visualstudio\\visual studio 2022\\source\\repos\\dnisko\\newsaggregatorrssfeed\\newsaggregatorrssfeed\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8FF37F7-E8D2-4217-AE52-E289B66C1436}|NewsAggregatorRSSFeed\\NewsAggregatorRSSFeed.csproj|solutionrelative:newsaggregatorrssfeed\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{627B3C77-7143-45CD-B5ED-13167ADA44FD}|DomainModels\\DomainModels.csproj|d:\\docs\\visualstudio\\visual studio 2022\\source\\repos\\dnisko\\newsaggregatorrssfeed\\domainmodels\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{627B3C77-7143-45CD-B5ED-13167ADA44FD}|DomainModels\\DomainModels.csproj|solutionrelative:domainmodels\\article.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Docs\\VisualStudio\\Visual Studio 2022\\source\\repos\\dnisko\\NewsAggregatorRSSFeed\\NewsAggregatorRSSFeed\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "NewsAggregatorRSSFeed\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Docs\\VisualStudio\\Visual Studio 2022\\source\\repos\\dnisko\\NewsAggregatorRSSFeed\\NewsAggregatorRSSFeed\\Properties\\launchSettings.json",
+              "RelativeToolTip": "NewsAggregatorRSSFeed\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-29T10:53:23.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Docs\\VisualStudio\\Visual Studio 2022\\source\\repos\\dnisko\\NewsAggregatorRSSFeed\\NewsAggregatorRSSFeed\\Program.cs",
+              "RelativeDocumentMoniker": "NewsAggregatorRSSFeed\\Program.cs",
+              "ToolTip": "D:\\Docs\\VisualStudio\\Visual Studio 2022\\source\\repos\\dnisko\\NewsAggregatorRSSFeed\\NewsAggregatorRSSFeed\\Program.cs",
+              "RelativeToolTip": "NewsAggregatorRSSFeed\\Program.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAmwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T22:03:50.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NewsController.cs",
+              "DocumentMoniker": "D:\\Docs\\VisualStudio\\Visual Studio 2022\\source\\repos\\dnisko\\NewsAggregatorRSSFeed\\NewsAggregatorRSSFeed\\Controllers\\NewsController.cs",
+              "RelativeDocumentMoniker": "NewsAggregatorRSSFeed\\Controllers\\NewsController.cs",
+              "ToolTip": "D:\\Docs\\VisualStudio\\Visual Studio 2022\\source\\repos\\dnisko\\NewsAggregatorRSSFeed\\NewsAggregatorRSSFeed\\Controllers\\NewsController.cs",
+              "RelativeToolTip": "NewsAggregatorRSSFeed\\Controllers\\NewsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T22:41:55.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Article.cs",
+              "DocumentMoniker": "D:\\Docs\\VisualStudio\\Visual Studio 2022\\source\\repos\\dnisko\\NewsAggregatorRSSFeed\\DomainModels\\Article.cs",
+              "RelativeDocumentMoniker": "DomainModels\\Article.cs",
+              "ToolTip": "D:\\Docs\\VisualStudio\\Visual Studio 2022\\source\\repos\\dnisko\\NewsAggregatorRSSFeed\\DomainModels\\Article.cs",
+              "RelativeToolTip": "DomainModels\\Article.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T22:39:00.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UrlConfig.cs",
+              "DocumentMoniker": "D:\\Docs\\VisualStudio\\Visual Studio 2022\\source\\repos\\dnisko\\NewsAggregatorRSSFeed\\DomainModels\\UrlConfig.cs",
+              "RelativeDocumentMoniker": "DomainModels\\UrlConfig.cs",
+              "ToolTip": "D:\\Docs\\VisualStudio\\Visual Studio 2022\\source\\repos\\dnisko\\NewsAggregatorRSSFeed\\DomainModels\\UrlConfig.cs",
+              "RelativeToolTip": "DomainModels\\UrlConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T22:32:11.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "D:\\Docs\\VisualStudio\\Visual Studio 2022\\source\\repos\\dnisko\\NewsAggregatorRSSFeed\\Services\\ApiService.cs",
+              "RelativeDocumentMoniker": "Services\\ApiService.cs",
+              "ToolTip": "D:\\Docs\\VisualStudio\\Visual Studio 2022\\source\\repos\\dnisko\\NewsAggregatorRSSFeed\\Services\\ApiService.cs",
+              "RelativeToolTip": "Services\\ApiService.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAAAIsAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T22:29:56.961Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
