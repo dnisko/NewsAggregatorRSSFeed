@@ -4,4 +4,5 @@ To run the server:
 1. Download the project
 2. Navigate to the folder with the .exe file (PATH-TO-PROJECT\NewsAggregatorRSSFeed\NewsAggregatorRSSFeed\bin\Debug\net6.0)
 3. Run cmd here and type: dotnet NewsAggregatorRSSFeed.dll
-4. The server will start in the background and the frontend project will fetch the data.
+   - if there is an error saying that dotnet is not recognizable command, download & install .net Runtime from here: https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=6.0.0&arch=x64&rid=win-x64&os=win10
+5. The server will start in the background and the frontend project will fetch the data.
