@@ -1,20 +1,29 @@
 ﻿using System.Text.RegularExpressions;
 using DomainModels;
 using System.Xml.Linq;
+using Microsoft.Extensions.Configuration;
 
 namespace Services
 {
     public class ApiService
     {
-        private List<UrlConfig> urls;
+        private readonly List<UrlConfig> _urls;
+        private readonly HttpClient _httpClient;
+        private readonly OpenPageRankService _openPageRankService;
+        private readonly IConfiguration _configuration;
 
-        public ApiService()
+        public ApiService(HttpClient httpClient, OpenPageRankService openPageRankService, IConfiguration configuration)
         {
-           urls = new List<UrlConfig>
+            _httpClient = httpClient;
+            _openPageRankService = openPageRankService;
+            _configuration = configuration;
+
+           _urls = new List<UrlConfig>
             {
                 new UrlConfig
                 {
                     Source = "MIA",
+                    SourceUrl = "https://mia.mk",
                     FeedUrl = "https://mia.mk/feed",
                     Title = "title",
                     Description = "description",
@@ -26,6 +35,7 @@ namespace Services
                 new UrlConfig
                 {
                     Source = "Telma",
+                    SourceUrl = "https://telma.com.mk",
                     FeedUrl = "https://telma.com.mk/feed/",
                     Title = "title",
                     Description = "content:encoded",
@@ -37,6 +47,7 @@ namespace Services
                 new UrlConfig
                 {
                     Source = "24Vesti",
+                    SourceUrl = "https://24.mk",
                     FeedUrl = "https://admin.24.mk/api/rss.xml",
                     Title = "title",
                     Description = "content",
@@ -48,6 +59,7 @@ namespace Services
                 new UrlConfig
                 {
                     Source = "Sitel",
+                    SourceUrl = "https://sitel.com.mk",
                     FeedUrl = "https://sitel.com.mk/rss.xml",
                     Title = "title",
                     Description = "description",
@@ -59,6 +71,7 @@ namespace Services
                 new UrlConfig
                 {
                     Source = "Kanal5",
+                    SourceUrl = "https://kanal5.com.mk",
                     FeedUrl = "https://kanal5.com.mk/rss.aspx",
                     Title = "title",
                     Description = "content",
@@ -74,12 +87,18 @@ namespace Services
         {
             var allArticles = new List<Article>();
 
-            foreach (var urlConfig in urls)
+            foreach (var urlConfig in _urls)
             {
                 try
                 {
                     var xmlData = await FetchRssFeedXmlAsync(urlConfig.FeedUrl);
                     var parsedArticles = ParseRss(xmlData, urlConfig);
+                    
+                    foreach (var article in parsedArticles)
+                    {
+                        article.TrustScore = await _openPageRankService.GetTrustScoreAsync(article.SourceUrl);
+                        Console.WriteLine(article.TrustScore);
+                    }
                     allArticles.AddRange(parsedArticles);
                 }
                 catch (Exception ex)
@@ -93,12 +112,6 @@ namespace Services
 
         private async Task<string> FetchRssFeedXmlAsync(string feedUrl)
         {
-            //using (var httpClient = new HttpClient())
-            //{
-            //    var response = await httpClient.GetAsync(feedUrl);
-            //    response.EnsureSuccessStatusCode();
-            //    return await response.Content.ReadAsStringAsync();
-            //}
             using (var httpClient = new HttpClient())
             {
                 // Set the User-Agent header to your desired value
@@ -129,6 +142,9 @@ namespace Services
 
                     var article = new Article
                     {
+                        Source = urlConfig.Source,
+                        SourceUrl = urlConfig.SourceUrl,
+                        FeedUrl = urlConfig.FeedUrl,
                         Title = GetElementValue(item, urlConfig.Title),
                         Description = StripHtmlTags(GetElementValue(item, urlConfig.Description)),
                         Link = GetElementValue(item, urlConfig.Link),
@@ -173,6 +189,7 @@ namespace Services
                 return parent.Descendants(tagName).FirstOrDefault();
             }
         }
+
         private bool IsValidRegex(string pattern)
         {
             if (string.IsNullOrWhiteSpace(pattern))
@@ -199,6 +216,7 @@ namespace Services
 
             return true;
         }
+
         private static bool ContainsRegexMetaCharacters(string pattern)
         {
             // List of common regex metacharacters
